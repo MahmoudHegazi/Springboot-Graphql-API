@@ -1,0 +1,15 @@
+type Dog {
+  id: ID!
+  name: String!
+  modal: String!
+  breed: String
+}
+
+type Query{
+ findAllDogs : [Dog]!
+ findDogById(id: ID) : Dog!
+}
+
+type Mutation{
+  addDog(name: String!, newModal: String!, breed: String) : Dog!
+}
